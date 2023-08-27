@@ -1,0 +1,6 @@
+__pycache__
+data/imputed_full_body.csv
+data/imputed_half_body.csv
+data/full_body.csv
+data/half_body.csv
+
