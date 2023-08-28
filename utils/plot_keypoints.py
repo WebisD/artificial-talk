@@ -30,7 +30,7 @@ def transform_keypoints(points, scale=10, window_size=[800,600]):
     return transformed_points
 
 def show_keypoints(prediction, save_path=None, show=True, window_size=[800,600]):
-    prediction = transform_keypoints(prediction, scale=10, window_size=[800,600])
+    #prediction = transform_keypoints(prediction, scale=10, window_size=[800,600])
     prediction = np.concatenate((prediction, np.ones((prediction.shape[0], 1))), axis=1)
     prediction = np.array(prediction)
     annotation = [Annotation(prediction)]
